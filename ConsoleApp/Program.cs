@@ -59,4 +59,5 @@ Console.WriteLine("Hello, World!");
 //var t = HappyNumberSolution.HappyNumber(1111111);
 //var s = RobotBounded.IsRobotBounded("GGLLGG");
 //var s = TargetSum.CombinationSum(new int[2] { 2, 1 }, 3);
-var maxUnits = SlowestKeySolution.SlowestKey(new int[]{ 9, 29, 49, 50 }, "cbcd");
+//var maxUnits = SlowestKeySolution.SlowestKey(new int[]{ 9, 29, 49, 50 }, "cbcd");
+var maxAverage = MaxAverageRatio.MaxAverageRatioProblem(new int[][] { [1, 2], [3, 5], [2, 2] }, 2);
