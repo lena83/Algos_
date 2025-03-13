@@ -16,17 +16,17 @@ namespace Algos.Amazon
             foreach (var cls in classes)
             {
                 int pass = cls[0], total = cls[1];
-                double diff = (double)(pass + 1) / (total + 1) - (double)pass / total;
-                maxHeap.Enqueue((diff, pass, total), -diff);
+                double possibleGain = (double)(pass + 1) / (total + 1) - (double)pass / total;
+                maxHeap.Enqueue((possibleGain, pass, total), -possibleGain);
             }
 
             while (extraStudents > 0)
             {
-                var (diff, pass, total) = maxHeap.Dequeue();
+                var (possibleGain, pass, total) = maxHeap.Dequeue();
                 pass++;
                 total++;
-                diff = (double)(pass + 1) / (total + 1) - (double)pass / total;
-                maxHeap.Enqueue((diff, pass, total), -diff);
+                possibleGain = (double)(pass + 1) / (total + 1) - (double)pass / total;
+                maxHeap.Enqueue((possibleGain, pass, total), -possibleGain);
                 extraStudents--;
             }
 
