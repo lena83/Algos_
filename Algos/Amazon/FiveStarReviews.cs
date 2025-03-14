@@ -39,7 +39,7 @@ namespace Algos.Amazon
             }
 
 
-            return count-1;
+            return count;
 
         }
     }
