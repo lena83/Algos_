@@ -32,7 +32,7 @@ namespace Algos.Amazon
                var possibleRatingGain = (double) (fiveStarRatingAmount + 1) / (products + 1) - (double)fiveStarRatingAmount / products;
                 fiveStarRatingAmount++;
                 products++;
-                maxHeap.Enqueue((fiveStarRatingAmount+1, products+1), -possibleRatingGain);
+                maxHeap.Enqueue((fiveStarRatingAmount, products), -possibleRatingGain/productRatings.Length);
                diff -= possibleRatingGain / productRatings.Length;
                 count++;
 
