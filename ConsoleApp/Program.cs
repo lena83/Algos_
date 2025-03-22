@@ -61,4 +61,6 @@ Console.WriteLine("Hello, World!");
 //var s = TargetSum.CombinationSum(new int[2] { 2, 1 }, 3);
 //var maxUnits = SlowestKeySolution.SlowestKey(new int[]{ 9, 29, 49, 50 }, "cbcd");
 //var maxAverage = MaxAverageRatio.MaxAverageRatioProblem(new int[][] { [1, 2], [3, 5], [2, 2] }, 2);
-var reviews = FiveStarReviews.FiveStarReviewsProblem(new int[][] { [4, 4], [1, 2], [3, 6] }, 77);
+//var reviews = FiveStarReviews.FiveStarReviewsProblem(new int[][] { [4, 4], [1, 2], [3, 6] }, 77);
+
+var primes = SplitStringIntoPrimes.SplitPrimes("31173");
