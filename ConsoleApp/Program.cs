@@ -63,4 +63,5 @@ Console.WriteLine("Hello, World!");
 //var maxAverage = MaxAverageRatio.MaxAverageRatioProblem(new int[][] { [1, 2], [3, 5], [2, 2] }, 2);
 //var reviews = FiveStarReviews.FiveStarReviewsProblem(new int[][] { [4, 4], [1, 2], [3, 6] }, 77);
 
-var primes = SplitStringIntoPrimes.SplitPrimes("31173");
+//var primes = SplitStringIntoPrimes.SplitPrimes("31173");
+var maxCake = MaxAreaCutCake.MaxArea(5, 4, new int[] { 3,1 }, new int[] { 1 });
